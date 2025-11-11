@@ -50,6 +50,9 @@ export default function Header() {
 
       {/* Menu mobile */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
+        <a href="#home" onClick={closeMenu}>
+          Home
+        </a>
         <a href="#about" onClick={closeMenu}>
           Sobre
         </a>
