@@ -160,7 +160,7 @@
 /* Responsividade */
 @media (max-width: 960px) {
   .hero {
-    padding: 0 1.5rem 2rem 1.5rem;
+    padding: 0 2rem 2rem 2rem;
   }
   .heroContainer {
     flex-direction: column-reverse;
