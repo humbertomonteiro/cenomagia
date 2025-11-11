@@ -74,7 +74,7 @@
   font-size: var(--font-size-title);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .highlight {
@@ -116,7 +116,7 @@
 /* ===== Indicador de scroll ===== */
 .scrollIndicator {
   position: absolute;
-  bottom: 2rem;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 2s infinite;
@@ -167,7 +167,7 @@
   }
 
   .title {
-    font-size: var(--font-size-subtitle);
+    font-size: 1.65rem;
   }
 
   .heroVisual {
