@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaHome,
+  FaInfo,
+  FaPaperPlane,
+  FaPhone,
+  FaTimes,
+} from "react-icons/fa";
 import styles from "./Header.module.css";
 import logo from "../../../assets/cenomagia.png";
+import Button from "../../shared/Button";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,17 +59,20 @@ export default function Header() {
       {/* Menu mobile */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
         <a href="#home" onClick={closeMenu}>
-          Home
+          <FaHome /> Home
         </a>
         <a href="#about" onClick={closeMenu}>
-          Sobre
+          <FaInfo /> Sobre
         </a>
         <a href="#portfolio" onClick={closeMenu}>
-          Portfólio
+          <FaPaperPlane /> Portfólio
         </a>
         <a href="#contact" onClick={closeMenu}>
-          Contato
+          <FaPhone /> Contato
         </a>
+        <div className={styles.btnCta}>
+          <Button variant="secondary">Fazer Orçamento</Button>
+        </div>
       </div>
     </header>
   );
