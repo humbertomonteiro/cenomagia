@@ -2,22 +2,22 @@
 
 :root {
   /* 🎨 Cores principais */
-  --color-primary: #ffb400;
-  --color-primary-dark: #e59e00;
+  --color-primary: #fad33a;
+  --color-primary-dark: #fdd81e;
   --color-accent: #1a1a1a;
   --color-text: #333;
   --color-bg: #ffffff;
   --color-gradient: linear-gradient(
     135deg,
-    #ffdd55 0%,
-    #ffb347 50%,
-    #ff9900 100%
+    #fad33a 0%,
+    #fdd81e 50%,
+    #fbd40f 100%
   );
   --color-gradient-2: linear-gradient(
     135deg,
-    #ff9900 0%,
-    #ffb347 50%,
-    #ffdd55 100%
+    #fbd40f 0%,
+    #fdd81e 50%,
+    #fad33a 100%
   );
   --color-shadow: rgba(0, 0, 0, 0.15);
 

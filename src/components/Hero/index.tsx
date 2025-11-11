@@ -1,12 +1,46 @@
-// Hero.tsx
+import { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import styles from "./Hero.module.css";
 import logo from "../../assets/cenomagia.png";
 import Button from "../shared/Button";
 
+// imagens do fundo
+import img1 from "../../assets/events/event1.jpg";
+import img2 from "../../assets/events/event2.jpg";
+import img3 from "../../assets/events/event3.jpg";
+import img4 from "../../assets/events/event4.jpg";
+import img5 from "../../assets/events/event5.jpg";
+
+const images = [img1, img2, img3, img4, img5];
+
 export default function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 6000); // muda a cada 4s
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className={styles.hero} id="home">
+      {/* Fundo animado */}
+      <div className={styles.backgroundContainer}>
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`${styles.bgSlide} ${
+              index === currentImage ? styles.active : ""
+            }`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
+        <div className={styles.backgroundOverlay}></div>
+      </div>
+
+      {/* Conteúdo */}
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>
           <div className={styles.badge}>
@@ -35,9 +69,6 @@ export default function Hero() {
 
         <div className={styles.heroVisual}>
           <img src={logo} alt="Logo Cenomagia" />
-          <div className={styles.floatingElement}></div>
-          <div className={styles.floatingElement}></div>
-          <div className={styles.floatingElement}></div>
         </div>
       </div>
 

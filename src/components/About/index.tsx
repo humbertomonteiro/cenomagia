@@ -1,10 +1,10 @@
 import styles from "./About.module.css";
 
-import event4 from "../../assets/event4.jpg";
-import event5 from "../../assets/event5.jpg";
-import event6 from "../../assets/event6.jpg";
-import event7 from "../../assets/event7.jpg";
-import event8 from "../../assets/event8.jpg";
+import event4 from "../../assets/events/event4.jpg";
+import event5 from "../../assets/events/event5.jpg";
+import event6 from "../../assets/events/event6.jpg";
+import event7 from "../../assets/events/event7.jpg";
+import event8 from "../../assets/events/event8.jpg";
 
 import Carousel from "../shared/Carousel";
 import Button from "../shared/Button";

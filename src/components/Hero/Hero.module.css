@@ -5,25 +5,55 @@
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-  background: var(--color-gradient);
   color: var(--color-accent);
   font-family: var(--font-primary);
   padding: 0 2rem;
 }
 
+/* ====== Fundo de imagens ====== */
+.backgroundContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bgSlide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1.5s ease, transform 3s ease;
+}
+
+.bgSlide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.backgroundOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #fad43afd, #fdc91ec2, #fdc91e8a);
+  z-index: 1;
+}
+
+/* ====== Conteúdo principal ====== */
 .heroContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
+  max-width: 100%;
   z-index: 2;
+  position: relative;
 }
 
 .heroContent {
-  flex: 1;
-  max-width: 100%;
+  width: 50%;
   z-index: 2;
 }
 
@@ -62,11 +92,10 @@
 
 .ctaButtons {
   display: flex;
-  max-width: 100%;
   gap: 1rem;
 }
 
-/* Área visual (imagem e elementos flutuantes) */
+/* ===== Logo ===== */
 .heroVisual {
   position: relative;
   flex: 1;
@@ -74,71 +103,24 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
+  z-index: 2;
 }
 
 .heroVisual img {
   width: 100%;
   max-width: 500px;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.25));
-  z-index: 3;
   animation: floatLogo 5s ease-in-out infinite;
 }
 
-@keyframes floatLogo {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Elementos flutuantes decorativos */
-.floatingElement {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.425);
-  border-radius: 50%;
-  filter: blur(8px);
-  animation: floatElement 6s ease-in-out infinite;
-  right: 20px;
-}
-
-.floatingElement:nth-child(2) {
-  top: 15%;
-  left: 10%;
-  width: 60px;
-  height: 60px;
-  animation-delay: 2s;
-}
-
-.floatingElement:nth-child(3) {
-  bottom: 20%;
-  left: 10px;
-  width: 100px;
-  height: 100px;
-  animation-delay: 4s;
-}
-
-@keyframes floatElement {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-/* Indicador de scroll */
+/* ===== Indicador de scroll ===== */
 .scrollIndicator {
   position: absolute;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 2s infinite;
+  z-index: 3;
 }
 
 .scrollIcon {
@@ -157,18 +139,31 @@
   }
 }
 
-/* Responsividade */
-@media (max-width: 960px) {
-  .hero {
-    padding: 0 2rem 2rem 2rem;
+@keyframes floatLogo {
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 960px) {
   .heroContainer {
     flex-direction: column-reverse;
     text-align: center;
   }
 
   .heroContent {
-    max-width: 100%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  .title {
+    font-size: var(--font-size-subtitle);
   }
 
   .heroVisual {
@@ -176,20 +171,12 @@
     margin-bottom: 2rem;
   }
 
-  .title {
-    font-size: 2rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
   .ctaButtons {
     justify-content: center;
     flex-direction: column;
   }
 
-  .scrollIndicator {
-    display: none;
+  .backgroundOverlay {
+    background: linear-gradient(to top, #fad43afd, #fdc91ee0, #fdc91e8a);
   }
 }

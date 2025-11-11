@@ -1,11 +1,11 @@
 import styles from "./Portfolio.module.css";
 
-import imgEvent1 from "../../assets/event1.jpg";
-import imgEvent2 from "../../assets/event2.jpg";
-import imgEvent3 from "../../assets/event3.jpg";
-import imgEvent4 from "../../assets/event4.jpg";
-import imgEvent5 from "../../assets/event5.jpg";
-import imgEvent6 from "../../assets/event6.jpg";
+import imgEvent1 from "../../assets/events/event1.jpg";
+import imgEvent2 from "../../assets/events/event2.jpg";
+import imgEvent3 from "../../assets/events/event3.jpg";
+import imgEvent4 from "../../assets/events/event4.jpg";
+import imgEvent5 from "../../assets/events/event5.jpg";
+import imgEvent6 from "../../assets/events/event6.jpg";
 
 export default function Portfolio() {
   const events = [
