@@ -43,9 +43,9 @@ export default function Hero() {
       {/* Conteúdo */}
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>
-          <div className={styles.badge}>
+          {/* <div className={styles.badge}>
             <span>✨ Como nasceu a Cenomagia</span>
-          </div>
+          </div> */}
 
           <h1 className={styles.title}>
             Transformando <span className={styles.highlight}>sonhos</span> em
