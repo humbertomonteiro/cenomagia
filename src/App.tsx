@@ -1,10 +1,14 @@
-import Home from "./pages/Home";
+import { BrowserRouter } from "react-router-dom";
+import RoutesApp from "./infra/routes/RoutesApp";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <AuthProvider>
+        <RoutesApp />
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
