@@ -37,7 +37,7 @@ export default function About() {
             encantam e surpreendem. Cada projeto é uma nova oportunidade de
             despertar a imaginação e deixar uma marca memorável.
           </p>
-          <Button variant="secondary">Conheça nossa equipe</Button>
+          <Button variant="secondary">Fazer um orçamento</Button>
         </div>
 
         <div className={styles.imageContainer}>
