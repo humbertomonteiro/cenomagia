@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap");
+
+:root {
+  /* 🎨 Cores principais */
+  --color-primary: #ffb400;
+  --color-primary-dark: #e59e00;
+  --color-accent: #1a1a1a;
+  --color-text: #333;
+  --color-bg: #ffffff;
+  --color-gradient: linear-gradient(
+    135deg,
+    #ffdd55 0%,
+    #ffb347 50%,
+    #ff9900 100%
+  );
+  --color-gradient-2: linear-gradient(
+    135deg,
+    #ff9900 0%,
+    #ffb347 50%,
+    #ffdd55 100%
+  );
+  --color-shadow: rgba(0, 0, 0, 0.15);
+
+  /* 🧩 Tipografia */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --font-size-base: 16px;
+  --font-size-title: 3rem;
+  --font-size-subtitle: 2rem;
+  --font-size-text: 1.1rem;
+
+  /* 🪄 Espaçamentos */
+  --spacing-section: 6rem;
+  --border-radius: 50px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 100px; /* altura do header fixo */
+}

@@ -1,0 +1,128 @@
+.footer {
+  background: var(--color-gradient-2);
+  color: var(--color-accent);
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Brand / Logo */
+.brand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  width: 140px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-accent);
+  opacity: 0.9;
+}
+
+/* Links rápidos */
+.links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 0.6rem;
+}
+
+.links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  opacity: 0.9;
+}
+
+.links a:hover {
+  color: var(--color-highlight);
+  opacity: 1;
+}
+
+/* Contato */
+.contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Redes sociais */
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.socials a {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--color-highlight);
+  transform: scale(1.1);
+}
+
+/* Barra inferior */
+.bottomBar {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bottomBar p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
