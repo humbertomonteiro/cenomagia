@@ -60,7 +60,14 @@ export default function Hero() {
           </p>
 
           <div className={styles.ctaButtons}>
-            <Button variant="primary">Solicitar Orçamento</Button>
+            <Button
+              variant="primary"
+              href="https://wa.me/5585982222739"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Solicitar Orçamento
+            </Button>
             <Button variant="outline" href="#portfolio">
               Ver Portfólio
             </Button>

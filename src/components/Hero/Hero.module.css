@@ -151,6 +151,10 @@
 
 /* ===== Responsividade ===== */
 @media (max-width: 960px) {
+  .heroVisual {
+    max-width: 400px;
+  }
+
   .bgSlide {
     background-position: top;
   }
@@ -186,5 +190,9 @@
 
   .backgroundOverlay {
     background: linear-gradient(to top, #fad43afd, #fdc91ee0, #fdc91e8a);
+  }
+
+  .description {
+    font-size: 0.95rem;
   }
 }

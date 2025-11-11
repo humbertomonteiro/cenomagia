@@ -37,7 +37,14 @@ export default function About() {
             encantam e surpreendem. Cada projeto é uma nova oportunidade de
             despertar a imaginação e deixar uma marca memorável.
           </p>
-          <Button variant="secondary">Fazer um orçamento</Button>
+          <Button
+            variant="secondary"
+            href="https://wa.me/5585982222739"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fazer um orçamento
+          </Button>
         </div>
 
         <div className={styles.imageContainer}>

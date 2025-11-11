@@ -1,5 +1,6 @@
 import About from "../../components/About";
 import Contact from "../../components/Contacts";
+import Feedbacks from "../../components/Feedbacks";
 import Hero from "../../components/Hero";
 import Portfolio from "../../components/Portfolio";
 import ScrollToTop from "../../components/shared/ScrollToTop";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Portfolio />
+      <Feedbacks />
       <Contact />
       <Footer />
 

@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import logo from "../../../assets/cenomagia.png";
 
 export default function Footer() {
@@ -38,16 +38,20 @@ export default function Footer() {
         <div className={styles.contact}>
           <h3>Contato</h3>
           <p>contato@cenomagia.com.br</p>
-          <p>(85) 00000-0000</p>
+          <p>(85) 98222-2739</p>
           <div className={styles.socials}>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/cenomagia/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FaFacebookF />
-            </a>
+            </a> */}
             <a
-              href="https://wa.me/5511987654321"
+              href="https://wa.me/5585982222739"
               target="_blank"
               rel="noreferrer"
             >

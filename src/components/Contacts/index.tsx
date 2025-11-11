@@ -7,7 +7,7 @@ import { db } from "../../infra/firebase/config";
 
 import {
   FaInstagram,
-  FaFacebookF,
+  // FaFacebookF,
   FaWhatsapp,
   FaEnvelope,
 } from "react-icons/fa";
@@ -49,18 +49,32 @@ export default function Contact() {
             </div>
             <div className={styles.infoItem}>
               <FaWhatsapp className={styles.icon} />
-              <span>(85) 00000-0000</span>
+              <span>(85) 98222-2739</span>
+            </div>
+            <div className={styles.infoItem}>
+              <a
+                href="https://instagram.com/cenomagia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram className={styles.icon} />
+                <span>cenomagia</span>
+              </a>
             </div>
           </div>
 
-          <div className={styles.socials}>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          {/* <div className={styles.socials}>
+            <a
+              href="https://instagram.com/cenomagia"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
-          </div>
+          </div> */}
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>
