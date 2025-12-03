@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
             <div className={styles.infoItem}>
               <FaWhatsapp className={styles.icon} />
-              <span>(85) 98222-2739</span>
+              <span>(85) 98778-0766</span>
             </div>
             <div className={styles.infoItem}>
               <a

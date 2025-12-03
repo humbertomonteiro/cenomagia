@@ -62,7 +62,7 @@ export default function Hero() {
           <div className={styles.ctaButtons}>
             <Button
               variant="primary"
-              href="https://wa.me/5585982222739"
+              href="https://wa.me/5585987780766"
               target="_blank"
               rel="noreferrer"
             >

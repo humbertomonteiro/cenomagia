@@ -38,7 +38,7 @@ export default function Footer() {
         <div className={styles.contact}>
           <h3>Contato</h3>
           <p>contato@cenomagia.com.br</p>
-          <p>(85) 98222-2739</p>
+          <p>(85) 98778-0766</p>
           <div className={styles.socials}>
             <a
               href="https://www.instagram.com/cenomagia/"
@@ -51,7 +51,7 @@ export default function Footer() {
               <FaFacebookF />
             </a> */}
             <a
-              href="https://wa.me/5585982222739"
+              href="https://wa.me/5585987780766"
               target="_blank"
               rel="noreferrer"
             >
